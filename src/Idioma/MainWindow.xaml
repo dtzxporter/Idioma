@@ -1,0 +1,20 @@
+﻿<Window x:Class="Idioma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Idioma - Font tool (COD4-WAW)" Height="268" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Width="400" Loaded="Window_Loaded">
+    <Grid Background="#FF3E3E3E">
+        <Border x:Name="GenerateDefault" BorderBrush="#FFFFDC00" Cursor="Hand" BorderThickness="1" HorizontalAlignment="Right" Height="42" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="160" Background="#FF3E3E3E" MouseLeftButtonUp="GenerateDefault_MouseLeftButtonUp">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">Generate default char set</TextBlock>
+        </Border>
+        <ComboBox x:Name="FontSelection" HorizontalAlignment="Left" IsReadOnly="True" IsEditable="False" Margin="22,47,0,0" VerticalAlignment="Top" Width="277"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,28,0,0" TextWrapping="Wrap" Text="Select a font" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,90,0,0" TextWrapping="Wrap" Text="Scale size:" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBox x:Name="ScaleFontSize" HorizontalAlignment="Left" Height="23" VerticalContentAlignment="Center" Margin="89,89,0,0" TextWrapping="Wrap" Text="72" VerticalAlignment="Top" Width="70" PreviewTextInput="ScaleFontSize_PreviewTextInput"/>
+        <TextBlock HorizontalAlignment="Left" Margin="164,90,0,0" TextWrapping="Wrap" Text="72 is perfect for MOST fonts" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,133,0,0" TextWrapping="Wrap" Text="Top offset:" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBox x:Name="TopOffsetSize" HorizontalAlignment="Left" Height="23" VerticalContentAlignment="Center" Margin="102,132,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="70" PreviewTextInput="ScaleFontSize_PreviewTextInput"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,161,0,0" TextWrapping="Wrap" Text="Right offset:" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBox x:Name="RightOffsetSize" HorizontalAlignment="Left" Height="23" VerticalContentAlignment="Center" Margin="102,160,0,0" TextWrapping="Wrap" Text="-4" VerticalAlignment="Top" Width="70" PreviewTextInput="ScaleFontSize_PreviewTextInput"/>
+
+    </Grid>
+</Window>
